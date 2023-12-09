@@ -1,5 +1,9 @@
 <div>
     User controller Index View
 
-    {{ $anInteger }}
+    @isset($anInteger)
+        {{ $anInteger }}
+    @else
+        The variable $anInteger is not defined.
+    @endisset
 </div>

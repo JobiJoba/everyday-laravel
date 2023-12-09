@@ -1,6 +1,13 @@
 # Day 1
 
--   Install Laravel, launch the site, make sure it works, create a new page.
+-   Install Laravel, launch the site, make sure it works.
+-   Create a view and play with the router, with parameters, etc
+-   Play with controller also
+
+## Summary
+
+Everything with route happen in Web.php
+Create a route for every new page
 
 ### With a view
 
@@ -77,3 +84,28 @@ To display the variable in the view I added:
 ```php
 {{ $anInteger }}
 ```
+
+### Is a variable set?
+
+I've added a variable $anInteger in my view, but I reuse the same view (index) for the path /users and /users/{anInteger}.
+
+I had a crash because it's not defined in users so I've to use the following code:
+
+```php
+@isset($anInteger)
+    {{ $anInteger }}
+@else
+    The variable $anInteger is not defined.
+@endisset
+```
+
+### Alias
+
+Not really related directly but i've created an alias for php artisan (ar) it shorten a bit the command :)
+
+### Route:view vs Route::get
+
+route::get if we use a controller to associated with a Get method of this controller and we need to execute logic before (ex go into the database)
+
+route::view if we only use a view
+Perfect for static page

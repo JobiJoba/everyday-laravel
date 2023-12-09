@@ -24,6 +24,9 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+
+    Route::view('users', 'users.index');
+
 Route::get('/new-page', function () {
     return view('new-page');
 });
@@ -40,7 +43,7 @@ Route::get('/new-page-no-view', function () {
 });
 
 
-Route::get('/users', [UserController::class, 'index']);
+// Route::get('/users', [UserController::class, 'index']);
 
 Route::get('/users/{anInteger}', [UserController::class, 'withInteger']);
 
