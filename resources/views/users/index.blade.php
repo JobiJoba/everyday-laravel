@@ -6,4 +6,7 @@
     @else
         The variable $anInteger is not defined.
     @endisset
+
+
+    <livewire:first-livewire-component />
 </div>

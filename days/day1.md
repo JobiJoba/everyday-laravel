@@ -109,3 +109,22 @@ route::get if we use a controller to associated with a Get method of this contro
 
 route::view if we only use a view
 Perfect for static page
+
+
+### Create my first livewire component
+
+So Livewire is the way I want to go to create components in laravel. 
+
+From the laravel-livewire.com website: 
+
+
+- Livewire renders the initial component output with the page (like a Blade include). This way, it's SEO friendly.
+- When an interaction occurs, Livewire makes an AJAX request to the server with the updated data.
+- The server re-renders the component and responds with the new HTML.
+- Livewire then intelligently mutates DOM according to the things that changed.
+
+### Can I execute javascript in my livewire component?
+
+
+
+
