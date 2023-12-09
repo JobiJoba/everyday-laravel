@@ -1,7 +1,9 @@
 <?php
 
+use App\Livewire\SecondLivewire;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WebcamController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +28,7 @@ Route::view('profile', 'profile')
 
 
     Route::view('users', 'users.index');
+    Route::get('/second', SecondLivewire::class);
 
 Route::get('/new-page', function () {
     return view('new-page');
@@ -48,6 +51,9 @@ Route::get('/new-page-no-view', function () {
 Route::get('/users/{anInteger}', [UserController::class, 'withInteger']);
 
 
+
+
+Route::get('webcam', [WebcamController::class, 'index']);
+Route::post('webcam', [WebcamController::class, 'store'])->name('webcam.capture');
+
 require __DIR__.'/auth.php';
-
-
