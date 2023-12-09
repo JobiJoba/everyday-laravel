@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,20 @@ Route::view('profile', 'profile')
 Route::get('/new-page', function () {
     return view('new-page');
 });
+
+Route::get('/new-page-no-view', function () {
+    return
+    '<html>
+        <head>
+            <title>New Page</title>
+        </head>
+        <body>
+            <h1>New Page No View</h1>
+        </body>';
+});
+
+
+Route::get('/users', [UserController::class, 'index']);
 
 
 require __DIR__.'/auth.php';
