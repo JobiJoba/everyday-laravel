@@ -42,6 +42,8 @@ Route::get('/new-page-no-view', function () {
 
 Route::get('/users', [UserController::class, 'index']);
 
+Route::get('/users/{anInteger}', [UserController::class, 'withInteger']);
+
 
 require __DIR__.'/auth.php';
 

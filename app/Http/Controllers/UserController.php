@@ -11,4 +11,9 @@ class UserController extends Controller
         return view('users.index');
     }
 
+    public function withInteger($anInteger)
+    {
+        return view('users.index',['anInteger' => $anInteger]);
+    }
+
 }
