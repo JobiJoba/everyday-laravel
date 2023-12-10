@@ -34,27 +34,25 @@
     </form>
 </div>
 
-<script language="JavaScript" type="module">
-    console.log(navigator.mediaDevices)
-    const jsConfetti = new window.JSConfetti()
-    jsConfetti.addConfetti()
-
-        Webcam.set({
-        width: 490,
-        height: 350,
-        image_format: 'jpeg',
-        jpeg_quality: 90});
+<script language="JavaScript">
 
 
-        Webcam.attach( '#my_camera' );
+    Webcam.set({
+    width: 490,
+    height: 350,
+    image_format: 'jpeg',
+    jpeg_quality: 90});
 
-        function take_snapshot() {
-            Webcam.snap( function(data_uri) {
-                $(".image-tag").val(data_uri);
-                document.getElementById('results').innerHTML = '<img src="'+data_uri+'"/>';
-            } );
 
-        }
+    Webcam.attach( '#my_camera' );
+
+    function take_snapshot() {
+        Webcam.snap( function(data_uri) {
+            $(".image-tag").val(data_uri);
+            document.getElementById('results').innerHTML = '<img src="'+data_uri+'"/>';
+        } );
+
+    }
 
 </script>
 
