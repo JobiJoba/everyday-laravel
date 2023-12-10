@@ -36,7 +36,7 @@ Route::get('/new-page', function () {
 
 Route::get('/new-page-no-view', function () {
     return
-    '<html>
+        '<html lang="en">
         <head>
             <title>New Page</title>
         </head>
