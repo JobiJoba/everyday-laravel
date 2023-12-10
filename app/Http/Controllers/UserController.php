@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class UserController extends Controller
 {
     public function index()
@@ -13,7 +11,11 @@ class UserController extends Controller
 
     public function withInteger($anInteger)
     {
-        return view('users.index',['anInteger' => $anInteger]);
+        return view('users.index', ['anInteger' => $anInteger]);
     }
 
+    public function test()
+    {
+
+    }
 }
