@@ -9,7 +9,6 @@
         <title>{{ $title ?? 'Page Title' }}</title>
     </head>
     <body>
-        here
         {{ $slot }}
     </body>
 </html>
