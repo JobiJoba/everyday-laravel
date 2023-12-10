@@ -58,6 +58,4 @@ Route::get('/edsd', function () {
 Route::get('webcam', [WebcamController::class, 'index']);
 Route::post('webcam', [WebcamController::class, 'store'])->name('webcam.capture');
 
-Route::view('/testingPR');
-
 require __DIR__.'/auth.php';
