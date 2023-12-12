@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebcamController;
 use App\Livewire\SecondLivewire;
@@ -57,5 +58,7 @@ Route::get('/edsd', function () {
 
 Route::get('webcam', [WebcamController::class, 'index']);
 Route::post('webcam', [WebcamController::class, 'store'])->name('webcam.capture');
+
+Route::resource('photos', PhotoController::class);
 
 require __DIR__.'/auth.php';
