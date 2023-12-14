@@ -22,8 +22,16 @@ Learning Laravel.
 - Laravel Blueprint
 - CU
 
+## Things I should try
+
+- Make an event with a listener
+- Connect app with S3 Storage
+- Install Guzzle Http client and call an api
+
 ## days
 
 - [Day 1](./days/2023-12-09.md)
 - [Day 2](./days/2023-12-10.md)
 - [Day 3](./days/2023-12-11.md)
+- [Day 4](./days/2023-12-12.md)
+- [Day 5](./days/2023-12-13.md)
