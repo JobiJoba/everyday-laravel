@@ -27,6 +27,8 @@ Learning Laravel.
 - Make an event with a listener
 - Connect app with S3 Storage
 - Install Guzzle Http client and call an api
+- Make an auth:guard
+- Create a Policy
 
 ## days
 
@@ -35,3 +37,4 @@ Learning Laravel.
 - [Day 3](./days/2023-12-11.md)
 - [Day 4](./days/2023-12-12.md)
 - [Day 5](./days/2023-12-13.md)
+- [Day 6](./days/2023-12-14.md)
